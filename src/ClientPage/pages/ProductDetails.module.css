@@ -1,0 +1,159 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(63vh); /* Restar 40px de la altura total de la ventana para los márgenes */
+  margin-top: 20px; /* Reducir el margen superior */
+  margin-bottom: 20px; /* Reducir el margen inferior */
+  justify-content: center;
+}
+
+.productDetails {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative;
+}
+
+.descriptionTitle {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+
+.detailsContainerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.imageContainer {
+  flex: 1;
+}
+
+.productImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.infoContainer {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productTitle {
+  margin-top: 0;
+  color:black;
+}
+
+.infoContainer p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.infoContainer p:last-child {
+  margin-bottom: 0;
+}
+
+.infoContainer span {
+  font-weight: bold;
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btnCount {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.quantity {
+  width: 50px;
+  text-align: center;
+  margin: 0 10px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Estilos para los botones "Volver" y "Agregar al carrito" */
+.volverBtn {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-right: 20px; /* Margen derecho para separar del otro botón */
+  text-decoration: none; /* Quitar subrayado del enlace */
+}
+
+/* Estilos para el botón "Agregar al carrito" */
+.carritoBtn {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  margin-right: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 767px) {
+  .productImage {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .detailsContainer {
+    flex-direction: column;
+  }
+
+  .quantityControls {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .quantity {
+    margin-top: 0;
+    width: auto;
+  }
+
+  /* Estilos para los botones "Volver" y "Agregar al carrito" en móviles */
+  .volverBtn, .carritoBtn {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: 10px; /* Separación entre los botones */
+    margin-left: auto; /* Mover los botones a la esquina derecha */
+    margin-right: 20px; /* Añadir margen derecho para separar los botones */
+  }
+}

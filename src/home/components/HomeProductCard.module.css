@@ -1,0 +1,89 @@
+.productCard {
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  margin: 10px;
+  width: 250px; /* Reducimos el ancho de la tarjeta */
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px; /* Redondeamos las esquinas */
+  margin-bottom:45px
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+}
+
+.productImage {
+  width: 100%;
+  height: 250px; /* Reducimos la altura de la imagen */
+  object-fit: cover;
+  border-bottom: 1px solid #e0e0e0;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px 8px 0 0; /* Redondeamos solo las esquinas superiores */
+}
+
+.productImage:hover {
+  transform: scale(1.1);
+}
+
+.productDetails {
+  padding: 10px; /* Reducimos el padding */
+  text-align: left;
+  position: relative; /* Para poder posicionar el botón Comprar */
+}
+
+.productTitle {
+  font-size: 1rem; /* Reducimos el tamaño del título */
+  margin-bottom: 8px;
+  font-weight: bold; /* Añadido para destacar el título */
+  color: #000; /* Corregimos el color del texto del título a negro */
+}
+
+.productDescription {
+  font-size: 0.9rem; /* Reducimos el tamaño de la descripción */
+  margin-bottom: 8px;
+  line-height: 1.4;
+  color: #666;
+}
+
+.priceAndStock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.productPrice {
+  font-size: 1rem;
+  color: #007bff;
+}
+
+.productStock {
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.buyButton {
+  position: absolute;
+  bottom: 10px; /* Ajustamos el margen inferior para que quede visible */
+  right: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px; /* Ajustamos el padding */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buyButton:hover {
+  background-color: #218838;
+}

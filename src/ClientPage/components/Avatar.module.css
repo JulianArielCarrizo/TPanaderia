@@ -1,0 +1,13 @@
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem; /* Increased size */
+    height: 6rem; /* Increased size */
+    border-radius: 50%;
+    background-color: #4563eb; /* blue-600 */
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid #64748b; /* slate-500 */
+  }

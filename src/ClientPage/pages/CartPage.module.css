@@ -1,0 +1,256 @@
+.dashboardCartContainer {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.cartContent {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+}
+
+.mobileMenuIcon {
+    position: fixed;
+    padding: 12px;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    border: 2px solid white;
+    background-color: #1f2937;
+    color: white;
+    border-radius: 12px;
+}
+
+.cartTitle {
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cartContentTitle {
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: black;
+}
+
+.tableContainer {
+    overflow-x: auto;
+}
+
+.cartItems {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cartItems th {
+    padding: 8px;
+    border: none;
+    visibility: hidden;
+}
+
+.cartItems td {
+    padding: 8px;
+    border-top: none;
+    border-bottom: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+    position: relative; /* Posición relativa para el botón de eliminar */
+}
+
+.cartItems tr:first-child td {
+    border-top: none;
+}
+
+.itemImage {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.cartTotalContainer {
+    max-width: 550px;
+    margin: 20px auto;
+    text-align: right;
+}
+
+.cartTotal {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.paymentMethodContainer {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.paymentOptionsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paymentMethodContainer h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.paymentInput {
+    margin-left: 20px;
+}
+
+.paymentMethodContainer label {
+    display: inline-flex;
+    align-items: center;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
+}
+
+.paymentMethodContainer .paymentInput {
+    margin-right: 5px;
+}
+
+.buttonContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buyButton {
+    height: 40px; /* Altura igual a la del botón "Seguir Comprando" */
+    background-color: #007BFF; /* Color original del botón "Comprar" */
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #007BFF; /* Añadir borde */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transición suave de color de fondo */
+    display: inline-flex; /* Mostrar como flex para centrar verticalmente */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+}
+
+.buyButton:hover {
+    background-color: #0056b3;
+}
+
+.buyButton.hidden {
+    opacity: 0;
+    pointer-events: none; /* Deshabilita los eventos del botón cuando está oculto */
+}
+
+.centeredContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paymentMethodTitle {
+    color: black;
+}
+
+.emptyCartMessage {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.sideTitleContainer {
+    display: flex;
+    align-items: center;
+}
+
+.sideTitle {
+    font-size: 25px;
+    margin-left: 20px; /* Ajuste de margen izquierdo */
+    color: #6c757d;
+}
+
+.dashboardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Ajuste de ancho para la columna Eliminar */
+.cartItems .deleteButton {
+    width: 40px; /* Ajusta el ancho según el icono o contenido */
+    padding: 2px; /* Ajusta el relleno para centrar el ícono verticalmente */
+    font-size: 17px; /* Ajusta el tamaño del ícono */
+    background: none; /* Elimina el fondo para que el botón sea más compacto */
+    border: none; /* Elimina el borde */
+    cursor: pointer;
+    color: red; /* Color del ícono */
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease; /* Transición suave de opacidad */
+    position: absolute; /* Posición absoluta para flotar sobre el contenido */
+    top: 50%; /* Centrar verticalmente */
+    transform: translateY(-50%); /* Ajustar centrado vertical */
+    right: 8px; /* Ajuste del espacio derecho */
+}
+
+.cartItems .deleteButton:hover {
+    color: #c82333;
+}
+
+.cartItems tr:hover .deleteButton {
+    opacity: 1; /* Mostrar el botón al pasar el mouse sobre el elemento */
+}
+
+/* Estilos para el botón 'Seguir Comprando' */
+.continueShoppingButton {
+    height: 40px; /* Altura igual a la del botón "Comprar" */
+    background-color: #28a745; /* Color de fondo verde */
+    color: white; /* Color de texto blanco */
+    padding: 10px 20px; /* Ajustar padding */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    font-size: 16px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease; /* Transiciones suaves */
+    margin-right: 10px; /* Margen derecho */
+    display: inline-flex; /* Mostrar como flex para centrar verticalmente */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+}
+.continueShoppingButton:hover {
+    background-color: #218838; /* Color de fondo más oscuro al pasar el mouse */
+}
+
+@media (max-width: 600px) {
+    /* Estilos específicos para dispositivos móviles */
+    .cartItems .deleteButton {
+        width: auto; /* Ancho automático para ajustarse al contenido */
+        padding: 0 10px; /* Añadir un poco de relleno para espaciar el ícono */
+        font-size: 16px; /* Reducir tamaño del ícono en móviles */
+    }
+
+    .cartItems th,
+    .cartItems td {
+        font-size: 14px; /* Reducir el tamaño de fuente en pantallas pequeñas */
+    }
+}

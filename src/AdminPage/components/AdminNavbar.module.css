@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  background-color: #4563eb; /* blue-600 */
+  color: white;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100vw;
+}
+
+#content-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+#menu.show-menu {
+  display: block;
+}
+
+#menu {
+  background-color: #1f2937; /* gray-900 */
+  min-height: 100vh;
+  z-index: 10;
+  color: #94a3b8; /* slate-300 */
+  width: 16rem; /* w-64 */
+  position: fixed;
+  left: 0;
+  height: 100vh;
+}
+
+#logo {
+  margin: 1rem 1.5rem; /* my-4 px-6 */
+  color: white;
+}
+
+#logo h1 {
+  margin-right: auto; /* Empuja el h1 hacia la derecha tanto como sea posible */
+  color: white;
+}
+
+#logo h1 span {
+  padding: 12px;
+  color: #3b82f6; /* blue-500 */
+}
+
+#logo p {
+  color: #64748b; /* slate-500 */
+  font-size: 0.875rem; /* text-sm */
+}
+
+#profile {
+  padding: 2.5rem 1.5rem; /* px-6 py-10 */
+  display: flex;
+  align-items: center; /* Center the content vertically */
+  flex-direction: column; /* Stack avatar and username vertically */
+}
+
+#profile p {
+  font-size: 1.25rem; /* Aumento del tamaño del texto */
+  font-weight: bold;
+  color: #64748b; /* slate-500 */
+  text-align: center;
+  margin-top: 0.5rem; /* Space between avatar and text */
+}
+
+#profile a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#profile a span:last-child {
+  font-size: 1rem; /* text-base */
+  font-weight: bold;
+}
+
+#menu {
+  display: none; /* Inicialmente oculto */
+}
+
+.menu-icon-navbar {
+  margin-left: 1rem; /* Espaciado entre el ícono del menú y el título */
+  margin-right: 1rem; /* Espaciado entre el ícono del menú y el borde de la pantalla */
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 2px solid transparent; /* Borde inicial transparente */
+}
+
+.menu-icon-navbar.active {
+  border-color: #64748b; /* Color del borde activo */
+}
+
+.title-nav-pan {
+  margin-left: 2rem; /* Espaciado entre el ícono del menú y el título */
+}
+
+/* Media query para tablet o resoluciones superiores */
+@media (min-width: 1224px) {
+  #menu {
+    display: block; /* Mostrar el menú */
+  }
+}
+
+#nav {
+  width: 100%;
+  padding: 1.5rem; /* px-6 */
+}
+
+.show-navbar {
+  display: block;
+}
+
+/* Clase para ocultar el navbar */
+.hide-navbar {
+  display: none;
+}
+
+.nav-link {
+  width: 100%;
+  padding: 0.75rem 0.5rem; /* px-2 py-3 */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* space-x-2 */
+  border-bottom: 1px solid #334155; /* border-slate-700 */
+  transition: background-color 0.15s ease-linear;
+  text-decoration: none; /* Remove text decoration */
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.05); /* hover:bg-white/5 */
+}
+
+.nav-link.active {
+  background-color: #4563eb; /* Aplicando el color de ::selection */
+  color: white;
+}
+
+.nav-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-text span:first-child {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: bold;
+  color: white;
+}
+
+.nav-text span:last-child {
+  font-size: 0.875rem; /* text-sm */
+  color: rgba(255, 255, 255, 0.5); /* text-white/50 */
+  display: none;
+}
+
+.link-salir {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .nav-text span:last-child {
+    display: block; /* hidden md:block */
+  }
+}
+
+/* Nuevos estilos para el icono del menú */
+.menu-icon-navbar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.mobile-menu-icon {
+  position: fixed;
+  padding: 12px;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}

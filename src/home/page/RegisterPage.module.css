@@ -1,0 +1,78 @@
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 56vh; /* Ajusta la altura para que se centre mejor */
+    padding-top: 2rem;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Reduce el margen inferior */
+}
+
+.content {
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 340px;
+    margin-top: -20px;
+    margin-bottom: 40px; /* Reduce el margen inferior */
+}
+
+.formGroup {
+    margin-bottom: 1rem;
+}
+
+.label {
+    color: #fff;
+}
+
+.input,
+.textarea {
+    width: calc(100%);
+    padding: 0.75rem;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.textarea {
+    min-height: 150px;
+}
+
+.submitBtn {
+    width: calc(100%);
+    padding: 0.75rem;
+    background-color: #0062cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+    background-color: #004bb5;
+}
+
+.loginPrompt {
+    margin-top: 10px;
+    text-align: left;
+    color: #fff; /* Cambia el color del texto a blanco */
+}
+
+.loginLink {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.loginLink:hover {
+    text-decoration: underline;
+}

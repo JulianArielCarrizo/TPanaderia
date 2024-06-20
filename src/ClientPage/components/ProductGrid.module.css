@@ -1,0 +1,15 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta el tamaño mínimo y máximo de las columnas */
+  gap: 20px; /* Espacio entre los ítems */
+  max-width: 1200px; /* Ancho máximo */
+  padding: 0 20px; /* Añadimos espacios laterales */
+  justify-content: center; /* Centramos la grilla horizontalmente */
+  margin: 20px auto; /* Centramos la grilla dentro del contenedor y agregamos margen */
+}
+
+@media (max-width: 768px) {
+  .gridContainer {
+    grid-template-columns: 1fr; /* Cambiamos a 1 columna por fila en dispositivos móviles */
+  }
+}

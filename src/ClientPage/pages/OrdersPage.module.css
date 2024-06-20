@@ -1,0 +1,128 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px; /* Añadir padding para los dispositivos móviles */
+    transition: margin-left 0.3s ease; /* Transición suave para el dashboard */
+}
+
+.dashboardClosed {
+    margin-left: -300px; /* Ocultar el dashboard moviéndolo fuera de la pantalla */
+}
+
+.dashboardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.heading {
+    font-size: 24px;
+    margin: 20px 0; /* Ajustar el margen superior e inferior */
+}
+
+.sideTitle-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre elementos */
+    margin-right: 30px; /* Margen derecho para separar del icono */
+    margin-top: 10px; /* Ajuste para mover hacia abajo */
+}
+
+.sideTitle {
+    font-size: 25px;
+    margin: 0; /* Eliminar el margen superior e inferior */
+    color: #6c757d; /* Color de texto secundario */
+    margin-left: 20px; /* Ajuste adicional para separar del icono */
+    margin-top: 10px; /* Ajuste para mover hacia abajo */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    max-width: 600px; /* Limitar el ancho de la tabla a 600px */
+    margin: auto; /* Centrar la tabla horizontalmente */
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap; /* Evitar el salto de línea en el contenido */
+    overflow: hidden; /* Ocultar el contenido que desborda */
+    text-overflow: ellipsis; /* Mostrar puntos suspensivos para indicar contenido truncado */
+}
+
+.table th:nth-child(1),
+.table td:nth-child(1) {
+    max-width: 50px; /* Limitar el ancho de la columna "N° Pedido" */
+}
+
+.table th:nth-child(2),
+.table td:nth-child(2) {
+    max-width: 350px; /* Expandir el ancho de la columna "Productos" */
+    white-space: normal; /* Permitir el salto de línea en el contenido */
+}
+
+.table th:nth-child(4),
+.table td:nth-child(4) {
+    max-width: 100px; /* Limitar el ancho de la columna "Fecha" */
+}
+
+.table th:nth-child(5),
+.table td:nth-child(5) {
+    max-width: 60px; /* Limitar el ancho de la columna "Estado" */
+    text-align: center;
+}
+
+.productItem {
+    margin-bottom: 5px;
+}
+
+.noDetails {
+    color: #999;
+}
+
+.statusCell {
+    text-align: center;
+}
+
+.statusIcon {
+    color: #28a745;
+}
+
+/* Estilos para el dashboard */
+.dashboardToggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+/* Estilos adicionales para hacer la tabla responsiva */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 10px; /* Añadir padding para los dispositivos móviles */
+    }
+
+    .table th,
+    .table td {
+        padding: 6px; /* Ajustar el padding en dispositivos más pequeños */
+        font-size: 14px; /* Reducir el tamaño de fuente en dispositivos más pequeños */
+    }
+}
+
+.mobile-menu-icon {
+    position: fixed;
+    padding: 10px;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    border: 2px solid white;
+    background-color: #1f2937;
+    color: white;
+    border-radius: 12px;
+}

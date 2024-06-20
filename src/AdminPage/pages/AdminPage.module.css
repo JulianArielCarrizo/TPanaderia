@@ -1,0 +1,144 @@
+.admin-page {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.admin-page h2 {
+   padding:20px;
+   font-size:34px;
+    text-align: center; /* Centrar el título horizontalmente */
+    margin-top:50px;
+
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #333;
+}
+
+.actions-cell {
+    width: 80px; /* Ancho ajustado para la columna de acciones */
+}
+
+
+
+/* Estilos para las filas de productos */
+.product-row td {
+    height: 100px; /* Altura fija para las filas de productos */
+}
+
+.add-button-container {
+    display: flex;
+    justify-content: flex-start; /* Alinea el botón a la izquierda */
+    align-items: center; /* Centra verticalmente el botón */
+    margin-bottom: 20px; /* Espacio entre el botón y la tabla */
+    margin-top: 20px; /* Espacio entre el botón y el título "Productos" */
+}
+
+.add-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+.table-container {
+    overflow-x: auto; /* Añade scroll horizontal si es necesario */
+    margin-top: 20px; /* Margen superior para separar de los botones */
+    margin-bottom:80px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+Estilos para columnas individuales
+.col-imagen {
+    width: 80px; /* Ajuste de ancho para la columna de imagen */
+}
+
+.col-nombre {
+    width: 110px; /* Ajuste de ancho para la columna de nombre */
+}
+
+.col-stock {
+    width: 80px; /* Ajuste de ancho para la columna de cantidad en stock */
+}
+
+.col-precio {
+    width: 80px; /* Ajuste de ancho para la columna de precio */
+}
+.showDashboard {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+  .mobile-menu-icon {
+    position: fixed;
+    padding: 10px;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    border: 2px solid white;
+    background-color: #1f2937;
+    color: white;
+    border-radius: 12px;
+  }
+@media (max-width: 600px) {
+    /* Estilos para pantallas pequeñas */
+    .admin-page {
+        max-width: 100%; /* Aprovecha todo el ancho disponible */
+        padding: 0 10px; /* Agrega espacios a los lados para que no quede pegado al borde */
+    }
+
+    table {
+        font-size: 14px; /* Reducir tamaño de fuente para pantallas pequeñas */
+    }
+
+    .actions-cell {
+        width: 100px; /* Ancho ajustado para la columna de acciones en pantallas pequeñas */
+        
+    }
+}

@@ -1,0 +1,75 @@
+.card {
+  width: 100%; /* Ancho ajustado para que ocupe el 100% del contenedor */
+  max-width: 580px; /* Ancho máximo para evitar que se agrande demasiado en pantallas grandes */
+  height: auto; /* Altura automática para que se ajuste al contenido */
+  padding: 20px;
+  background-color: #ffffff; /* Fondo blanco */
+  border: 1px solid #e0e0e0; /* Borde suave */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+.card:hover {
+  transform: translateY(-3px); /* Efecto de elevación */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en el hover */
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333; /* Color de texto oscuro */
+}
+
+.card p {
+  font-size: 1.5rem;
+  color: #666; /* Color de texto más claro */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+.card button {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color de texto del botón */
+  border: none;
+  border-radius: 5px; /* Bordes redondeados para el botón */
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.card button:hover {
+  background-color: #0056b3; /* Cambio de color en hover */
+}
+
+.cardLink {
+  text-decoration: none; /* Eliminar subrayado de enlaces */
+  color: inherit; /* Heredar el color del texto */
+  display: block; /* Hacer que el enlace ocupe todo el espacio del card */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Ancho completo del contenedor */
+    padding: 15px; /* Reducir padding para pantallas más pequeñas */
+    margin-top: 20px; /* Reducir margen superior */
+    margin-bottom: 20px; /* Reducir margen inferior */
+  }
+
+  .card h2 {
+    font-size: 1.5rem; /* Reducir tamaño de fuente del título */
+  }
+
+  .card p {
+    font-size: 1.2rem; /* Reducir tamaño de fuente del párrafo */
+  }
+}

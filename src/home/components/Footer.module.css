@@ -1,0 +1,52 @@
+.footer {
+    background-color: #333; /* Color similar al Navbar */
+    color: #fff;
+    padding: 1.5rem 0; /* Reducimos el padding para disminuir la altura */
+}
+
+.footerContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch; /* Alineamos los elementos a lo largo del eje cruzado (altura) */
+}
+
+.footerColumn {
+    flex: 1;
+    padding: 0 1rem;
+    margin-bottom: 2rem; /* Agregamos un espacio entre columnas */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alineamos los elementos a la izquierda */
+}
+
+.footerColumnTitle {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footerLink {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footerLink:hover {
+    text-decoration: underline;
+}
+
+.footerLink:hover {
+    text-decoration: none; /* Quitamos el subrayado en el hover */
+}
+
+.footerContactItem {
+    margin-bottom: 0.5rem; /* Espacio entre elementos de la columna "Contacto" */
+}
+
+@media screen and (max-width: 768px) {
+    .footerColumn {
+        flex: 1 1 100%; /* Columnas de ancho completo en dispositivos pequeños */
+    }
+}

@@ -1,0 +1,70 @@
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Añade una columna para los elementos */
+    height: 56vh;
+    padding-top: 2rem;
+}
+
+h1 {
+    color: #fff; /* Color blanco para el texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-top: 20px; /* Ajuste de margen superior */
+    margin-bottom: 30px; /* Añade un espacio debajo del título */
+}
+
+.content {
+    background-color: #333; /* Fondo gris oscuro */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 340px; /* Ancho máximo modificado */
+    margin-top: -20px; /* Ajuste de margen superior */
+    margin-bottom: 50px; /* Añade un margen inferior al contenedor */
+}
+
+.formGroup {
+    margin-bottom: 1rem; /* Espaciado entre grupos de formulario */
+}
+
+.label {
+    color: #fff; /* Color de texto blanco */
+}
+
+.input {
+    width: calc(100%); /* Aumentamos el ancho del input */
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0062cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+    background-color: #004bb5;
+}
+.registerPrompt {
+    margin-top: 10px;
+    text-align: left;
+    color:white
+  }
+  
+  .registerLink {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .registerLink:hover {
+    text-decoration: underline;
+  }

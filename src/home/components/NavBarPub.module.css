@@ -1,0 +1,96 @@
+.publicnavbarNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.publicnavbarLogo {
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.publicnavbarLogo a {
+  color: #fff;
+  text-decoration: none;
+  align-items: center;
+}
+
+.publicnavbarMenu {
+  display: none;
+}
+
+.publicnavbarMenu.active {
+  display: block;
+}
+
+.publicnavbarMenu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.publicnavbarMenu ul li {
+  margin-bottom: 1rem;
+}
+
+.publicnavbarMenu ul li a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.publicnavbarHamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.publicnavbarLine {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.publicnavbarLine.open:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.publicnavbarLine.open:nth-child(2) {
+  opacity: 0;
+}
+
+.publicnavbarLine.open:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.logo {
+  
+  width: 48px; /* Asegúrate de que el tamaño coincida con el tamaño del logo */
+  height: 48px;
+}
+@media (min-width: 768px) {
+  .publicnavbarMenu {
+    display: flex;
+  }
+
+  .publicnavbarMenu ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .publicnavbarMenu ul li {
+    margin-bottom: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .publicnavbarHamburger {
+    display: none;
+  }
+}

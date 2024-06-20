@@ -1,0 +1,25 @@
+/* En HomeGridContainer.module.css */
+.homeGridContainer {
+  display: flex;
+  justify-content: center; /* Centramos horizontalmente */
+  margin-top: 20px; /* Espacio superior */
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas por fila */
+  gap: 20px; /* Espacio entre los ítems */
+  max-width: 1200px; /* Ancho máximo */
+  padding: 0 20px; /* Añadimos espacios laterales */
+  justify-content: center; /* Centramos la grilla horizontalmente */
+  margin: 0 auto; /* Centramos la grilla dentro del contenedor */
+}
+
+@media (max-width: 768px) {
+  .gridContainer {
+      display: flex; /* Cambiamos a flexbox */
+      flex-direction: column; /* Mostramos una columna en dispositivos móviles */
+      align-items: center; /* Centramos verticalmente las tarjetas */
+      padding: 0; /* Eliminamos el espacio lateral */
+  }
+}

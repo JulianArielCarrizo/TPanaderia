@@ -1,0 +1,8 @@
+.product-counter {
+    background-color: #4b5563; /* Color de fondo del contador */
+    color: #ffffff; /* Color del texto del contador */
+    padding: 0.25rem 0.5rem; /* Espaciado interno del contador */
+    border-radius: 50%; /* Asegura que el contador tenga bordes redondeados */
+    font-size: 0.75rem; /* Tamaño de fuente del contador */
+    margin-left:38px;
+  }
